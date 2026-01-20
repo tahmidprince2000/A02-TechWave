@@ -73,7 +73,13 @@ a { text-decoration: none; color: inherit; }
   font-size: 22px;
   font-weight: 900;
 }
-.logo span { color: #ff2fb3; }
+.logo span{
+  background: linear-gradient(90deg, #f0ec05e3 0%, #FF2FB3 0%, #7B2CFF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 
 .nav-links {
   list-style: none;
