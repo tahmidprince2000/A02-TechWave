@@ -30,9 +30,16 @@ a { text-decoration: none; color: inherit; }
 .btn-icon { width: 18px; height: 18px; }
 
 .btn-gradient {
-  background: linear-gradient(90deg, #FF2FB3 0%, #7B2CFF 100%);
-  box-shadow: 0 0 25px rgba(255, 47, 179, 0.25);
+  background: linear-gradient(
+    135deg,
+    #f0ec05e3 0%,
+    #ee05ac 51%,
+    #e703e0 100%
+  );
+
+  box-shadow: 0 0 25px rgba(255, 47, 179, 0.35);
 }
+
 .btn-gradient:hover { opacity: 0.92; }
 
 .btn-outline {
@@ -187,6 +194,7 @@ a { text-decoration: none; color: inherit; }
   height: 100%;
   border-radius: 50%;
   position: relative;
+  z-index: 1;
   overflow: hidden;
   border: 2px solid rgba(255,255,255,0.14);
   box-shadow:
@@ -224,8 +232,8 @@ a { text-decoration: none; color: inherit; }
 .hero-text {
   margin: 12px auto 0;
   max-width: 680px;
-  color: rgba(255,255,255,0.72);
-  font-size: 15px;
+  color: #FFFFFF;
+  font-size: 16px;
   line-height: 1.6;
   opacity: 0;
   animation: fadeUp 0.8s ease forwards;
