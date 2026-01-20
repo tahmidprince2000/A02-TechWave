@@ -307,3 +307,81 @@ a { text-decoration: none; color: inherit; }
 
 .card-title { margin-top: 12px; font-size: 18px; font-weight: 900; }
 .card-text { margin-top: 8px; font-size: 13px; color: rgba(255,255,255,0.70); line-height: 1.6; }
+
+
+.episodes {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.episode {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 18px;
+  overflow: hidden;
+  transition: border 0.2s ease, transform 0.2s ease;
+}
+.episode:hover { border-color: rgba(255,255,255,0.22); transform: translateY(-2px); }
+
+.episode-video { width: 100%; aspect-ratio: 16 / 9; background: rgba(0,0,0,0.25); }
+.episode-video iframe { width: 100%; height: 100%; border: 0; }
+
+.episode-body { padding: 16px; }
+.episode-title { font-size: 16px; font-weight: 900; }
+.episode-text { margin-top: 8px; font-size: 13px; color: rgba(255,255,255,0.70); line-height: 1.6; }
+
+.episode-meta {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #36ff8d;
+  font-weight: 900;
+}
+.episode-meta img { width: 16px; height: 16px; }
+
+
+.host {
+  margin-top: 28px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 24px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column; /* mobile stacked */
+  gap: 16px;
+  align-items: center;
+}
+
+.host-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 999px;
+  object-fit: cover;
+  border: 3px solid rgba(255,255,255,0.12);
+}
+
+.host-right { text-align: center; }
+.host-name { font-size: 22px; font-weight: 900; }
+.host-bio { margin-top: 10px; font-size: 13px; color: rgba(255,255,255,0.72); line-height: 1.7; }
+
+.social {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.social a {
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+.social a:hover { background: rgba(255,255,255,0.08); }
+.social img { width: 18px; height: 18px; }
