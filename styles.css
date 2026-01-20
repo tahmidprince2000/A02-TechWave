@@ -440,3 +440,50 @@ a { text-decoration: none; color: inherit; }
   font-size: 12px;
   color: rgba(255,255,255,0.60);
 }
+
+
+@media (min-width: 992px) {
+
+ 
+  .nav { height: 72px; justify-content: flex-start; }
+  .nav-links {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .nav-btn { display: inline-flex; margin-left: auto; }
+  .hamburger { display: none; }
+  .mobile-menu { display: none !important; }
+
+  
+  .podcast { width: 240px; height: 240px; }
+  .badge-new { top: 22px; right: 22px; }
+  .mic { width: 92px; transform: translateY(-4px); }
+
+  .hero-title { font-size: 56px; }
+  .hero-text { font-size: 16px; }
+
+
+  .stats { grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .stat { padding: 24px; }
+  .stat-number { font-size: 30px; }
+
+  
+  .features { grid-template-columns: repeat(3, 1fr); }
+  .card-wide { grid-column: span 2; }
+
+
+  .episodes { grid-template-columns: repeat(3, 1fr); }
+
+
+  .host {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 28px;
+    gap: 26px;
+  }
+  .host-right { text-align: left; }
+  .social { justify-content: flex-start; }
+}
